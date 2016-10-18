@@ -67,12 +67,12 @@ params.filterByCircularity = True
 params.minCircularity = 0.0
 params.maxCircularity = 1
 
- 
+
 # Filter by Convexity
 params.filterByConvexity = True
 params.minConvexity = 0.0
 params.maxConvexity = 1
- 
+
 # Filter by Inertia
 params.filterByInertia = True
 params.minInertiaRatio = 0.0
@@ -133,7 +133,7 @@ def paramInit():
 
     params.minThreshold = cv2.getTrackbarPos('Min Threshold',title)
     params.maxThreshold = cv2.getTrackbarPos('Max Threshold',title)
-     
+
     params.minArea = cv2.getTrackbarPos('Min Filter Area',title)
     params.maxArea = cv2.getTrackbarPos('Max Filter Area', title)
     # params.filterByArea = cv2.getTrackbarPos(switch,'Keypoints')
@@ -143,11 +143,11 @@ def paramInit():
 
     # params.minConvexity = cv2.getTrackbarPos('Min Convexity',title)
     # params.maxConvexity = cv2.getTrackbarPos('Max Convexity',title)
-   
+
     # params.minInertiaRatio = cv2.getTrackbarPos('Min Inertia Ratio',title)
     # params.maxInertiaRatio = cv2.getTrackbarPos('Max Inertia Ratio',title)
 
- 
+
 
 
 
@@ -208,7 +208,7 @@ else:
 #     # maximum width of 300 pixels
 #     frame = vs.read()
 #     frame = imutils.resize(frame, width=300)
- 
+
 #     # check if the writer is None
 #     if writer is None:
 #         # store the image dimensions, initialzie the video writer,
@@ -224,15 +224,13 @@ else:
 #     cv2.imshow("Frame", frame)
 #     # cv2.imshow("Output", output)
 #     key = cv2.waitKey(1) & 0xFF
- 
+
 #     # if the `q` key was pressed, break from the loop
 #     if key == ord("q"):
 #         break
- 
+
 # # do a bit of cleanup
 # print("[INFO] cleaning up...")
 # cv2.destroyAllWindows()
 # vs.stop()
 # writer.release()
-
-
