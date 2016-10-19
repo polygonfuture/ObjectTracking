@@ -3,8 +3,10 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
-kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(6,6))
 fgbg = cv2.bgsegm.createBackgroundSubtractorGMG()
+
+cv2.ocl.setUseOpenCL(False)
 
 while(1):
     ret, frame = cap.read()

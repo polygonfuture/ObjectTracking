@@ -35,15 +35,15 @@ emptyControl = np.zeros((50,350), dtype = "uint8")
 
 def on_minThreshold(z):
     threshLO = cv2.getTrackbarPos('Min Threshold',title)
-    print ('Low Threshold:' + threshLO)
+    print ('Low Threshold:' + str(threshLO))
 
 def on_maxThreshold(z):
     threshHI = cv2.getTrackbarPos('Max Threshold',title)
-    print ('Hi Threshold:' + threshHI)
+    print('Hi Threshold:' + str(threshHI))
 
 def on_dilateThreshold(z):
     threshHI = cv2.getTrackbarPos('Max Threshold',title)
-    print ('Dilate Threshold:' + threshDI)
+    print('Dilate Threshold:' + str(threshDI))
 
 def threshSTART():
     threshLO = cv2.getTrackbarPos('Min Threshold',title)

@@ -3,6 +3,8 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
+cv2.ocl.setUseOpenCL(False)
+
 fgbg = cv2.createBackgroundSubtractorMOG2()
 
 while(1):
